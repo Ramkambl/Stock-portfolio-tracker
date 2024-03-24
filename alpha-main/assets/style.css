@@ -1,0 +1,33 @@
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.summary-item:last-child {
+    border-right: none;
+}
+
+.summary-value {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.summary-row {
+    margin-bottom: 20px;
+}
+
+*[data-dash-is-loading="true"]{
+    visibility: hidden;
+}
+*[data-dash-is-loading="true"]::before{
+    content: "Loading...";
+    display: inline-block;
+    color: rgba(0, 248, 182, 0.639);
+    visibility: visible;
+}
